@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.tripitem.TripItemCreateFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Spinner
+            android:id="@+id/fmTripListCreateType"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="25dp"
+            android:contentDescription="@string/label_type"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/fmTripListCreateLinearLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="@+id/fmTripListCreateType"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/fmTripListCreateType"
+            app:layout_constraintTop_toBottomOf="@+id/fmTripListCreateType">
+
+            <EditText
+                android:id="@+id/fmTripListCreateDate"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="@string/label_date"
+                android:inputType="date"
+                android:textSize="15sp"
+                android:autofillHints="" />
+
+            <EditText
+                android:id="@+id/fmTripListCreateTime"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="@string/label_time"
+                android:inputType="time"
+                android:textSize="15sp"
+                android:autofillHints="" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/fmTripListCreateContent"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="80dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="@string/label_content"
+            android:inputType="textMultiLine"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="@+id/fmTripListCreateLinearLayout"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/fmTripListCreateLinearLayout"
+            app:layout_constraintTop_toBottomOf="@+id/fmTripListCreateLinearLayout" />
+
+        <EditText
+            android:id="@+id/amount"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="@string/label_amount"
+            android:inputType="number"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="@+id/fmTripListCreateLinearLayout"
+            app:layout_constraintStart_toStartOf="@+id/fmTripListCreateLinearLayout"
+            app:layout_constraintTop_toBottomOf="@+id/fmTripListCreateLinearLayout" />
+
+        <Button
+            android:id="@+id/fmTripListCreateButtonCancel"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="25dp"
+            android:text="@string/label_cancel"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="@+id/fmTripListCreateContent"
+            app:layout_constraintTop_toBottomOf="@+id/fmTripListCreateContent" />
+
+        <Button
+            android:id="@+id/fmTripListCreateButtonAdd"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="25dp"
+            android:text="@string/label_add_TripList"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="@+id/fmTripListCreateButtonCancel"
+            app:layout_constraintEnd_toEndOf="@+id/fmTripListCreateContent"
+            app:layout_constraintStart_toEndOf="@+id/fmTripListCreateButtonCancel"
+            app:layout_constraintTop_toTopOf="@+id/fmTripListCreateButtonCancel" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

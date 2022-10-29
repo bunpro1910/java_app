@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/listItemTripItemDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        android:textSize="11sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/listItemTripItemTime"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="15dp"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toBottomOf="@+id/listItemTripItemDate"
+        app:layout_constraintStart_toEndOf="@+id/listItemTripItemDate"
+        app:layout_constraintTop_toTopOf="@+id/listItemTripItemDate" />
+
+    <TextView
+        android:id="@+id/listItemITripItemType"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginEnd="25dp"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toBottomOf="@+id/listItemTripItemTime"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/listItemTripItemTime" />
+
+    <TextView
+        android:id="@+id/listItemTripItemContent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:paddingBottom="15dp"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="@+id/listItemITripItemType"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/listItemTripItemDate"
+        app:layout_constraintTop_toBottomOf="@+id/listItemTripItemDate" />
+
+    <TextView
+        android:id="@+id/amount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        android:paddingBottom="15dp"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="@+id/listItemITripItemType"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/listItemTripItemDate"
+        app:layout_constraintTop_toBottomOf="@+id/listItemTripItemDate" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
