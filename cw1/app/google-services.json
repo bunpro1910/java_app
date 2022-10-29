@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "621240122851",
+    "project_id": "coursework-1-asm",
+    "storage_bucket": "coursework-1-asm.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:621240122851:android:34d77352844ac098da34d6",
+        "android_client_info": {
+          "package_name": "vn.edu.greenwich.cw1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "621240122851-g74svva300sm5m272ababh14uk1s76lh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "vn.edu.greenwich.cw1",
+            "certificate_hash": "194f918a8340f44633836863fac6cb3f88985c89"
+          }
+        },
+        {
+          "client_id": "621240122851-v7fr19v4k4lt852k939oda27h895hkr9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBGjKb-Mf9GR3NpC5SI3kshk2T3lSQO8-w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "621240122851-v7fr19v4k4lt852k939oda27h895hkr9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
